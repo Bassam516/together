@@ -383,11 +383,11 @@ body {
   margin-top: 20px;
 }
 
-.causes .causesContent .status {
+.causes .causesContent .causesStatus {
   margin: 20px 0;
 }
 
-.causes .causesContent .status span {
+.causes .causesContent .causesStatus span {
   color: var(--light-color);
   padding: 15px;
 }
@@ -501,6 +501,297 @@ body {
   margin: 10px 0 40px 0px;
 }
 
+/*start status section*/
+.status {
+  background: url(../images/slider02.jpg) no-repeat top center fixed;
+  background-size: cover;
+  text-align: center;
+  margin: 40px 0;
+}
+
+.status .overlay {
+  background: -webkit-gradient(linear, left top, right top, from(#55555516), to(#00000022));
+  background: linear-gradient(90deg, #55555516, #00000022);
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  padding: 60px 0;
+  color: #fff;
+}
+
+.status .overlay img {
+  margin: 30px 0;
+  width: 100px;
+}
+
+.status .overlay h2 {
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.status .overlay h6 {
+  font-weight: bold;
+}
+
+/*start volunteers section*/
+.volunteers h6 {
+  color: var(--light-color);
+  text-transform: uppercase;
+}
+
+.volunteers h2 {
+  font-weight: bold;
+  margin: 20px 0;
+  text-transform: capitalize;
+  font-size: 3rem;
+}
+
+.volunteers p {
+  max-width: 50%;
+  margin: 20px auto;
+}
+
+.volunteers .volunteersMem {
+  position: relative;
+  overflow: hidden;
+}
+
+.volunteers .volunteersMem:hover .overlay {
+  opacity: 1;
+}
+
+.volunteers .volunteersMem .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  opacity: 0;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.volunteers .volunteersMem .overlay:hover .content {
+  -webkit-transform: translateY(-40px);
+          transform: translateY(-40px);
+}
+
+.volunteers .volunteersMem .overlay .content {
+  -webkit-transform: translateY(40px);
+          transform: translateY(40px);
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.volunteers .volunteersMem .overlay .content h6 {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin: 0;
+  cursor: pointer;
+}
+
+.volunteers .volunteersMem .overlay .content span {
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.volunteers .volunteersMem .overlay .content ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.volunteers .volunteersMem .overlay .content ul li {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+}
+
+.volunteers .volunteersMem .overlay .content ul li a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  text-decoration: none;
+  background-color: var(--light-color);
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  overflow: hidden;
+}
+
+.volunteers .volunteersMem .overlay .content ul li a:hover i {
+  -webkit-animation: volunteersIcon .3s ease-in-out;
+          animation: volunteersIcon .3s ease-in-out;
+}
+
+.volunteers .volunteersMem .overlay .content ul li a i {
+  font-size: 12px;
+}
+
+.volunteers .volunteersMem .overlay .content ul li:nth-child(1) a:hover {
+  background-color: #3b5998;
+}
+
+.volunteers .volunteersMem .overlay .content ul li:nth-child(2) a:hover {
+  background-color: #1da1f2;
+}
+
+.volunteers .volunteersMem .overlay .content ul li:nth-child(3) a:hover {
+  background-color: #e60023;
+}
+
+.volunteers .teamInfo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.volunteers .teamInfo .memCard {
+  width: 60%;
+  background-color: #fff;
+  padding: 60px 40px;
+}
+
+.volunteers .teamInfo .memCard .content h6 {
+  color: #000;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.volunteers .teamInfo .memCard .content span {
+  text-transform: capitalize;
+  color: #979797;
+}
+
+.volunteers .teamInfo .memCard .content .info li {
+  color: #5a5a5a;
+  border-bottom: 1px solid #eeeeee;
+  padding: 20px 0;
+}
+
+.volunteers .teamInfo .memCard .content .info li a {
+  text-decoration: none;
+  color: #5a5a5a;
+  padding: 0 20px;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.volunteers .teamInfo .memCard .content .info li a:hover {
+  color: var(--light-color);
+}
+
+.volunteers .teamInfo .memCard .content .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 25%;
+}
+
+.volunteers .teamInfo .memCard .content .social li {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+}
+
+.volunteers .teamInfo .memCard .content .social li a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  text-decoration: none;
+  background-color: var(--light-color);
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  overflow: hidden;
+}
+
+.volunteers .teamInfo .memCard .content .social li a:hover i {
+  -webkit-animation: volunteersIcon .3s ease-in-out;
+          animation: volunteersIcon .3s ease-in-out;
+}
+
+.volunteers .teamInfo .memCard .content .social li a i {
+  font-size: 12px;
+}
+
+.volunteers .teamInfo .memCard .content .social li:nth-child(1) a:hover {
+  background-color: #3b5998;
+}
+
+.volunteers .teamInfo .memCard .content .social li:nth-child(2) a:hover {
+  background-color: #1da1f2;
+}
+
+.volunteers .teamInfo .memCard .content .social li:nth-child(3) a:hover {
+  background-color: #e60023;
+}
+
 @-webkit-keyframes social {
   0% {
     transform: scale(0.8);
@@ -566,6 +857,60 @@ body {
     -moz-transform: scale(1.2);
     -ms-transform: scale(1.2);
     -o-transform: scale(1.2);
+  }
+}
+
+@-webkit-keyframes volunteersIcon {
+  0% {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+  25% {
+    -webkit-transform: translateY(40px);
+            transform: translateY(40px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+    -webkit-transform: translateY(-80px);
+            transform: translateY(-80px);
+  }
+  75% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+    opacity: 1;
+  }
+}
+
+@keyframes volunteersIcon {
+  0% {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+  25% {
+    -webkit-transform: translateY(40px);
+            transform: translateY(40px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+    -webkit-transform: translateY(-80px);
+            transform: translateY(-80px);
+  }
+  75% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+    opacity: 1;
   }
 }
 /*# sourceMappingURL=style.css.map */
