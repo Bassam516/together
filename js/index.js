@@ -1,9 +1,9 @@
 $(document).ready(() => {
   // main slider
     let imgArr = [
-      "../images/slider01.jpg",
-      "../images/slider02.jpg",
-      "../images/slider03.jpg",
+      "images/slider01.jpg",
+      "images/slider02.jpg",
+      "images/slider03.jpg",
     ];
     let i = 1;
 
