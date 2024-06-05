@@ -80,6 +80,9 @@ $(document).ready(() => {
   $(".teamInfo").click(function () {
     $(this).fadeOut(500);
   });
+  $(".fa-close").click(function () {
+    $(".teamInfo").fadeOut(500);
+  });
 })
 
 

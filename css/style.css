@@ -40,6 +40,10 @@ body {
   background-color: var(--light-color);
 }
 
+*[class^='col'] {
+  margin: 20px 0;
+}
+
 /* start main section */
 .main {
   height: 100vh;
@@ -85,12 +89,8 @@ body {
   padding: 7px 0;
 }
 
-.main .upperNav .contactInfo {
-  width: 30%;
-}
-
 .main .upperNav .contactInfo p {
-  margin: 0;
+  margin: 0 20px 0 0;
 }
 
 .main .upperNav .contactInfo i {
@@ -388,8 +388,9 @@ body {
 }
 
 .causes .causesContent .causesStatus span {
+  display: inline-block;
   color: var(--light-color);
-  padding: 15px;
+  padding: 5px 15px;
 }
 
 .causes .causesContent a {
@@ -936,6 +937,10 @@ body {
   border-radius: 0;
 }
 
+.news .head .headContent {
+  max-width: 50%;
+}
+
 .news .card {
   border: none;
   -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
@@ -1173,6 +1178,64 @@ footer .rightList ul li a:hover {
     -webkit-transform: translateY(-5px);
             transform: translateY(-5px);
     opacity: 1;
+  }
+}
+
+@media screen and (max-width: 767.5px) {
+  .main .content h1 {
+    font-size: 2rem;
+  }
+  .main .overlay .nav .menu {
+    display: none;
+  }
+  .main .overlay .upperNav {
+    display: none;
+  }
+  .about .aboutContent {
+    padding: 0 10px;
+  }
+  .causes .container > p {
+    width: 100%;
+  }
+  .features .overlay .container > p {
+    width: 100%;
+  }
+  .events p {
+    width: 100%;
+  }
+  .volunteers p {
+    max-width: 100%;
+  }
+  .volunteers .teamInfo {
+    overflow: scroll;
+  }
+  .volunteers .teamInfo .memCard {
+    width: 100%;
+    padding: 200px 20px 0;
+  }
+  .volunteers .teamInfo .memCard i {
+    display: block !important;
+  }
+  .volunteers .teamInfo .memCard .content .social {
+    max-width: 50%;
+  }
+  .help .overlay .helpContent {
+    max-width: 100%;
+  }
+  .help .overlay .helpContent h2 {
+    font-size: 1.5rem;
+  }
+  footer .footerLeft p {
+    max-width: 100%;
+  }
+  footer .footerLeft .contactSocial {
+    max-width: 50%;
+  }
+  .news .head {
+    display: block !important;
+  }
+  .news .head .headContent {
+    max-width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
